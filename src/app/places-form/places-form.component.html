@@ -1,0 +1,29 @@
+<div class="form-fav">
+    <form class="ui form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="field">
+            <input
+                type="text"
+                name="name"
+                placeholder="Place Name"
+                formControlName="name"
+            />
+        </div>
+        <div class="field">
+            <input
+                type="text"
+                name="latitude"
+                placeholder="Latitude"
+                formControlName="lat"
+            />
+        </div>
+        <div class="field">
+            <input
+                type="text"
+                name="longitude"
+                placeholder="Longitude"
+                formControlName="long"
+            />
+        </div>
+        <button class="ui inverted violet button" type="submit"></button>
+    </form>
+</div>
